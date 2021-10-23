@@ -1,7 +1,7 @@
 package config
 
 import (
-	"github.com/platzily/dealer/utils/constants"
+	"github.com/platzily/consumer/utils/constants"
 )
 
 type RabbitMQConfig struct {

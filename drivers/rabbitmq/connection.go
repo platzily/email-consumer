@@ -15,5 +15,7 @@ func NewConnection() (conn *amqp.Connection, err error) {
 	}
 	defer conn.Close()
 
+	log.Infof("Rabbit Connection Success to %s", env.URL)
+
 	return conn, nil
 }

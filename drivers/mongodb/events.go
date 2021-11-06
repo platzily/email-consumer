@@ -19,6 +19,13 @@ type EventRepository struct {
 	conn *mongo.Client
 }
 
+func New(db *mongo.Client) domains.EventModel {
+
+	return &EventRepository{
+		conn: db,
+	}
+}
+
 func (er *EventRepository) GetById(id int64) (domains.Event, error) {
 
 	ctxOperation, cancel := context.WithTimeout(context.Background(), 5*time.Second)

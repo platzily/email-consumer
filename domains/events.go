@@ -20,5 +20,5 @@ type EventStateHistory struct {
 
 type EventModel interface {
 	GetById(id int64) (Event, error)
-	updateById(id int64, state string) error
+	UpdateById(id int64, state string) error
 }

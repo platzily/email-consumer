@@ -4,8 +4,8 @@ import (
 	"context"
 	"time"
 
-	"github.com/platzily/consumer/config"
-	"github.com/platzily/consumer/domains"
+	"github.com/platzily/email-consumer/config"
+	"github.com/platzily/email-consumer/domains"
 	log "github.com/sirupsen/logrus"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/mongo"

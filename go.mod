@@ -1,4 +1,4 @@
-module github.com/platzily/consumer
+module github.com/platzily/email-consumer
 
 go 1.16
 

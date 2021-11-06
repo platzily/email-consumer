@@ -1,7 +1,7 @@
 package rabbitmq
 
 import (
-	"github.com/platzily/consumer/config"
+	"github.com/platzily/email-consumer/config"
 	log "github.com/sirupsen/logrus"
 	"github.com/streadway/amqp"
 )

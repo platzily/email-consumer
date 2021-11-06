@@ -4,8 +4,8 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/platzily/consumer/config"
-	"github.com/platzily/consumer/drivers/mongodb"
+	"github.com/platzily/email-consumer/config"
+	"github.com/platzily/email-consumer/drivers/mongodb"
 )
 
 func main() {
@@ -25,5 +25,5 @@ func main() {
 	updatedResult, _ := eventRepository.GetById(0)
 	fmt.Printf("This is the updated result: %v", updatedResult)
 
-	fmt.Println("Hello world, from notification consumer")
+	fmt.Println("Hello world, from notification email consumer")
 }

@@ -3,6 +3,7 @@ package config
 import (
 	"os"
 
+	"github.com/joho/godotenv"
 	"github.com/platzily/email-consumer/utils/constants"
 	log "github.com/sirupsen/logrus"
 )
@@ -23,6 +24,10 @@ func ReadMongoDBConfig() *MongoDBConfig {
 }
 
 func getEnvVariableAsString(name string) string {
+	err := godotenv.Load()
+	if err != nil {
+		log.Fatal("Error loading .env file")
+	}
 	envVar := os.Getenv(name)
 
 	if len(envVar) == 0 {
